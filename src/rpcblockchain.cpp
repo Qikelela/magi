@@ -345,18 +345,15 @@ unsigned int MagiQuantumWave_v2(const CBlockIndex* pindexLast, bool fProofOfStak
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake);
 Value getchainfo(const Array& params, bool fHelp)
 {
-	if (fHelp)
+	if (fHelp || params.size() > 1)
 		throw runtime_error(
 			"getchainfo <height>\n");
-
-	int nHeight = nBestHeight;
-	if (params.size() == 1)
-	{
-		nHeight = params[0].get_int();
-		if (nHeight < 1 || nHeight > nBestHeight)
-        	throw runtime_error("Block number out of range.");
-	}
-
+	
+	int nHeight = params.size() > 0 ? params[0].get_int() : nBestHeight;
+	if (nHeight < 1 || nHeight > nBestHeight)
+        throw runtime_error(
+			"Block index out of range.");
+	
     Object obj;
 
     const CBlockIndex* pblockindex = FindBlockByHeight(nHeight);
