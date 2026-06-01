@@ -224,7 +224,7 @@ extern json_spirit::Value settxfee(const json_spirit::Array& params, bool fHelp)
 extern json_spirit::Value getrawmempool(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getblockhash(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getblock(const json_spirit::Array& params, bool fHelp);
-extern json_spirit::Value getblockbynumber(const json_spirit::Array& params, bool fHelp);
+extern json_spirit::Value getblockbyindex(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getnewblockvaluebynumber(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getautocheckpoint(const json_spirit::Array& params, bool fHelp);
 extern json_spirit::Value getsynccheckpoint(const json_spirit::Array& params, bool fHelp);
