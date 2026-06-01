@@ -347,7 +347,7 @@ Value getchainfo(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getchainfobyheight <height>\n");
+            "getchainfo <height>\n");
 
     int nHeight = params[0].get_int();
     if (nHeight < 1 || nHeight > nBestHeight)
