@@ -384,7 +384,7 @@
                <string notr="true"/>
               </property>
               <property name="text">
-               <string>Price:                 </string>
+               <string/>
               </property>
              </widget>
             </item>
