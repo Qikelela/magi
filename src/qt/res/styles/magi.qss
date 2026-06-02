@@ -95,7 +95,7 @@ QLineEdit { /* поля ввода */
 }
 
 QMessageBox {
-    background-color: #000000;
+    background-color: #232323;
     border-radius: 4px;
 }
 
