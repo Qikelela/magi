@@ -88,8 +88,7 @@ public:
         }
         else
         {
-            //foreground = option.palette.color(QPalette::Text);
-            foreground.setRgb(0, 255, 0);
+            foreground = COLOR_POSITIVE;
         }
         painter->setPen(foreground);
         QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true);
