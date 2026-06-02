@@ -88,7 +88,8 @@ public:
         }
         else
         {
-            foreground = option.palette.color(QPalette::Text);
+            //foreground = option.palette.color(QPalette::Text);
+            foreground.setRgb(0, 255, 0);
         }
         painter->setPen(foreground);
         QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true);
@@ -164,10 +165,10 @@ OverviewPage::OverviewPage(QWidget *parent) :
     updateTimer->start(_UPDATE_INTERVAL*_UPDATE_MS_TO_HOURS);
 
     // check price
-    connect(this, SIGNAL(valueChanged()), this, SLOT(updateValues()));
-    priceInfo = new GUIUtil::QPriceInfo();
-    setPriceUpdateCheck();
-    checkPrice();
+    //connect(this, SIGNAL(valueChanged()), this, SLOT(updateValues()));
+    //priceInfo = new GUIUtil::QPriceInfo();
+    //setPriceUpdateCheck();
+    //checkPrice();
 
     // start with displaying the "out of sync" warnings
     showOutOfSyncWarning(true);
