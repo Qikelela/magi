@@ -1,5 +1,5 @@
 # AltMagi (Magi Fork)
-===============
+---
 
 A **unofficial fork** of the **Magi (XMG)** wallet client.
 
@@ -27,6 +27,7 @@ Core consensus (**mPoW/mPoS hybrid**) remains **unchanged**.
 
 ## Source
 Original project: [magi-dev/magi](https://github.com/magi-dev/magi)
+
 Original site: [magicoin.de](https://magicoin.de/)
 
 ---
